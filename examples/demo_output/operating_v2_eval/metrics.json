@@ -1,0 +1,130 @@
+{
+  "n_images": 300,
+  "model": {
+    "n": 300.0,
+    "mae": 1.3923666666666668,
+    "rmse": 1.8050791561590867,
+    "mape": 0.0466842323256805,
+    "bias": -0.07174666666666664,
+    "median_ae": 1.093,
+    "max_ae": 5.747
+  },
+  "watershed": {
+    "n": 300.0,
+    "mae": 11.03,
+    "rmse": 13.197095640076771,
+    "mape": 0.31713414839045895,
+    "bias": -11.03,
+    "median_ae": 10.0,
+    "max_ae": 33.0
+  },
+  "hardest_examples": [
+    {
+      "image_name": "synthetic_2756",
+      "true_count": 52,
+      "pred_count": 46.253,
+      "baseline_count": 26.0,
+      "abs_error": 5.747,
+      "confidence": 0.5711484143150867,
+      "warnings": "strong blur or low focus; ensemble-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\operating_v2_eval\\overlays\\synthetic_2756_overlay.png"
+    },
+    {
+      "image_name": "synthetic_2878",
+      "true_count": 35,
+      "pred_count": 40.443,
+      "baseline_count": 27.0,
+      "abs_error": 5.442999999999998,
+      "confidence": 0.6090324520067979,
+      "warnings": "strong blur or low focus; ensemble-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\operating_v2_eval\\overlays\\synthetic_2878_overlay.png"
+    },
+    {
+      "image_name": "synthetic_2930",
+      "true_count": 38,
+      "pred_count": 32.928,
+      "baseline_count": 22.0,
+      "abs_error": 5.072000000000003,
+      "confidence": 0.6032030652916013,
+      "warnings": "strong blur or low focus; ensemble-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\operating_v2_eval\\overlays\\synthetic_2930_overlay.png"
+    },
+    {
+      "image_name": "synthetic_2744",
+      "true_count": 55,
+      "pred_count": 50.074,
+      "baseline_count": 25.0,
+      "abs_error": 4.926000000000002,
+      "confidence": 0.5549566183837376,
+      "warnings": "strong blur or low focus; ensemble-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\operating_v2_eval\\overlays\\synthetic_2744_overlay.png"
+    },
+    {
+      "image_name": "synthetic_2951",
+      "true_count": 21,
+      "pred_count": 16.222,
+      "baseline_count": 10.0,
+      "abs_error": 4.777999999999999,
+      "confidence": 0.5675535381295449,
+      "warnings": "strong blur or low focus; ensemble-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\operating_v2_eval\\overlays\\synthetic_2951_overlay.png"
+    }
+  ],
+  "failure_regimes": {
+    "blur_bucket": [
+      {
+        "group": "low",
+        "n": 147.0,
+        "mae": 1.4081156462585036,
+        "rmse": 1.8378573501378674,
+        "mape": 0.04710123565501022,
+        "bias": -0.01641496598639452,
+        "median_ae": 1.0999999999999996,
+        "max_ae": 5.747
+      },
+      {
+        "group": "medium",
+        "n": 153.0,
+        "mae": 1.377235294117647,
+        "rmse": 1.7730156744088152,
+        "mape": 0.046283582068089205,
+        "bias": -0.12490849673202614,
+        "median_ae": 1.0909999999999993,
+        "max_ae": 5.442999999999998
+      }
+    ],
+    "cluster_bucket": [
+      {
+        "group": "low",
+        "n": 150.0,
+        "mae": 1.3556933333333336,
+        "rmse": 1.7450477815807797,
+        "mape": 0.04262626870446231,
+        "bias": 0.05357333333333317,
+        "median_ae": 0.9900000000000002,
+        "max_ae": 5.442999999999998
+      },
+      {
+        "group": "medium",
+        "n": 150.0,
+        "mae": 1.42904,
+        "rmse": 1.8631773291879654,
+        "mape": 0.050742195946898695,
+        "bias": -0.19706666666666645,
+        "median_ae": 1.154,
+        "max_ae": 5.747
+      }
+    ]
+  },
+  "operating_envelope": {
+    "description": "Synthetic operating envelope with blur_sigma <= 0.9 and cluster_strength <= 0.30.",
+    "n_images": 63,
+    "n": 63.0,
+    "mae": 1.3746190476190483,
+    "rmse": 1.748926069571095,
+    "mape": 0.044453981752934774,
+    "bias": 0.33573015873015843,
+    "median_ae": 0.9610000000000003,
+    "max_ae": 4.109000000000002
+  }
+}

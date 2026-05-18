@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cluster-count-ai4s"
+version = "0.1.0"
+description = "Validation-first cell counting for dense microscopy images."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Thato Baruti"}
+]
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "Pillow>=10.0",
+  "scikit-learn>=1.5",
+  "scikit-image>=0.22",
+  "scipy>=1.11",
+  "tifffile>=2024.2.12",
+  "torch>=2.2",
+  "tqdm>=4.66"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2"
+]
+
+[project.scripts]
+cluster-count-generate = "cluster_count.generate_synthetic:main"
+cluster-count-train = "cluster_count.train_density_cnn:main"
+cluster-count-predict = "cluster_count.predict:main"
+cluster-count-watershed = "cluster_count.watershed_baseline:main"
+cluster-count-evaluate = "cluster_count.evaluate:main"
+cluster-count-report = "cluster_count.report:main"
+cluster-count-train-feature-ensemble = "cluster_count.train_feature_ensemble:main"
+cluster-count-evaluate-feature-ensemble = "cluster_count.evaluate_feature_ensemble:main"
+cluster-count-make-figures = "cluster_count.make_figures:main"
+cluster-count-train-patchwise = "cluster_count.train_patchwise_cnn:main"
+cluster-count-train-center-unet = "cluster_count.train_center_heatmap_unet:main"
+cluster-count-train-patchwise-calibrator = "cluster_count.train_patchwise_calibrator:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider"
+pythonpath = ["src"]
+testpaths = ["tests"]

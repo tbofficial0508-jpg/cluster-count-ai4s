@@ -1,0 +1,99 @@
+{
+  "n_images": 3,
+  "model": {
+    "n": 3.0,
+    "mae": 28.3700008392334,
+    "rmse": 35.171227539866116,
+    "mape": 0.43580706848942213,
+    "bias": -28.3700008392334,
+    "median_ae": 27.377548217773438,
+    "max_ae": 54.31222343444824
+  },
+  "watershed": {
+    "n": 3.0,
+    "mae": 36.666666666666664,
+    "rmse": 42.00793575821915,
+    "mape": 0.6266452956326374,
+    "bias": -36.666666666666664,
+    "median_ae": 34.0,
+    "max_ae": 63.0
+  },
+  "hardest_examples": [
+    {
+      "image_name": "synthetic_0022",
+      "true_count": 79,
+      "pred_count": 24.687776565551758,
+      "baseline_count": 16.0,
+      "abs_error": 54.31222343444824,
+      "confidence": 0.688716283828821,
+      "warnings": "high clustering; strong blur or low focus; model-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\synthetic_eval\\overlays\\synthetic_0022_overlay.png"
+    },
+    {
+      "image_name": "synthetic_0021",
+      "true_count": 55,
+      "pred_count": 27.622451782226562,
+      "baseline_count": 21.0,
+      "abs_error": 27.377548217773438,
+      "confidence": 0.7327988920686312,
+      "warnings": "high clustering; strong blur or low focus",
+      "overlay_path": "examples\\demo_output\\synthetic_eval\\overlays\\synthetic_0021_overlay.png"
+    },
+    {
+      "image_name": "synthetic_0023",
+      "true_count": 28,
+      "pred_count": 24.579769134521484,
+      "baseline_count": 15.0,
+      "abs_error": 3.4202308654785156,
+      "confidence": 0.7512793973451134,
+      "warnings": "high clustering; model-baseline disagreement",
+      "overlay_path": "examples\\demo_output\\synthetic_eval\\overlays\\synthetic_0023_overlay.png"
+    }
+  ],
+  "failure_regimes": {
+    "blur_bucket": [
+      {
+        "group": "medium",
+        "n": 2.0,
+        "mae": 15.398889541625977,
+        "rmse": 19.509332710137492,
+        "mape": 0.3099623531490177,
+        "bias": -15.398889541625977,
+        "median_ae": 15.398889541625977,
+        "max_ae": 27.377548217773438
+      },
+      {
+        "group": "high",
+        "n": 1.0,
+        "mae": 54.31222343444824,
+        "rmse": 54.31222343444824,
+        "mape": 0.6874964991702309,
+        "bias": -54.31222343444824,
+        "median_ae": 54.31222343444824,
+        "max_ae": 54.31222343444824
+      }
+    ],
+    "cluster_bucket": [
+      {
+        "group": "low",
+        "n": 2.0,
+        "mae": 28.86622714996338,
+        "rmse": 38.480615857640586,
+        "mape": 0.4048238007543747,
+        "bias": -28.86622714996338,
+        "median_ae": 28.86622714996338,
+        "max_ae": 54.31222343444824
+      },
+      {
+        "group": "medium",
+        "n": 1.0,
+        "mae": 27.377548217773438,
+        "rmse": 27.377548217773438,
+        "mape": 0.49777360395951703,
+        "bias": -27.377548217773438,
+        "median_ae": 27.377548217773438,
+        "max_ae": 27.377548217773438
+      }
+    ]
+  }
+}
