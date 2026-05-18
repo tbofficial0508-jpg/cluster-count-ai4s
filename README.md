@@ -27,7 +27,7 @@ reproducible AI-for-science prototype that asks a more practical question:
 - Optional BBBC004 adapter for dense overlap stress tests.
 - Optional BBBC005 adapter for blur/count variation when local copies are available.
 
-Because this repo lives under the GSK folder, the `S-BSST265` adapter will
+ the `S-BSST265` adapter will
 auto-discover `../S-BSST265/dataset` when present.
 
 ## Repo layout
