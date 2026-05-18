@@ -234,6 +234,3 @@ docker run --rm -it cluster-count-ai4s
 pytest -q
 ```
 
-## CV bullet
-
-Built ClusterCount-AI4S, a biomedical image-analysis repo for automated cell counting in dense/blurred microscopy images, combining a density-map CNN, watershed baseline, BBBC benchmark evaluation, visual overlays, Docker packaging, pytest tests, and GitHub Actions CI.
